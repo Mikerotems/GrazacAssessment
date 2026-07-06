@@ -39,6 +39,12 @@ The current version is intentionally simple, but the project could be extended w
 - A pause button and restart countdown behavior
 - A hint limit to make the game more challenging
 
+## Error Handling
+
+The game validates player input before processing a guess. Empty or whitespace-only submissions are rejected with a clear message, and the user is prompted to enter a valid answer.
+
+If the word list contains no valid entries, the game displays a friendly message instead of crashing and disables further interaction until the game is restarted.
+
 ## Running the Game
 
 You can run the game locally by opening [index.html](index.html) in a browser.
