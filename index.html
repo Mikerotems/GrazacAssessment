@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rotems Word Scramble Game</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <main class="game-shell">
+        <section class="game-card">
+            <h1>Rotems Word Scramble Game</h1>
+            <p class="subtitle">Unscramble the word before the timer reaches zero.</p>
+
+            <div class="stats">
+                <div class="stat-box">
+                    <span class="stat-label">Score</span>
+                    <strong id="score">0</strong>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-label">Time Left</span>
+                    <strong id="timer">15</strong>
+                </div>
+            </div>
+
+            <div class="word-section">
+                <p class="word-label">Scrambled word</p>
+                <h2 id="scrambledWord">Loading...</h2>
+                <button id="hintBtn" type="button">Show Hint</button>
+                <p id="hintText" class="hint hidden"></p>
+            </div>
+
+            <form id="guessForm">
+                <label for="guessInput">Your guess</label>
+                <input id="guessInput" name="guess" type="text" autocomplete="off" placeholder="Type your answer" />
+                <button type="submit">Submit Guess</button>
+            </form>
+
+            <p id="feedback" class="feedback">Enter a guess to begin.</p>
+            <button id="newGameBtn" type="button" class="secondary">Start New Game</button>
+        </section>
+    </main>
+    <script src="gameLogic.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
